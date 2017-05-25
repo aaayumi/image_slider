@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Image slider</title>
+  <style>
+    
+    
+      .circle {
+          height:20px;
+          width:20px;
+          border-radius:50px;
+          background-color: red;
+          float: left;
+      }   
+  </style>
+</head>
+<body>
+  <h1>Memory in Greece </h1>
+  <div>
+    <img class="slide active" src="img/img1.JPG" style="width:100%">
+     <img class="slide" src="img/img2.JPG" style="width:100%">
+     <img class="slide" src="img/img3.JPG" style="width:100%">
+    <img class="slide" src="img/img4.JPG" style="width:100%">
+    <button> previous </button>
+    <button> next </button>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+</div>
+    
+
+<script>
+function slider(){
+    var $active = document.getElementsByClassName('active');
+    var $next = $active.next();
+    
+    $active.addClass('active');
+    $active.removeClass('active');
+}
+    
+$(function(){
+    setInterval( "slider()", 3000);
+});
+</script>
+</body>
+</html>
