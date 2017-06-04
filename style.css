@@ -1,3 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+h1 {
+    font-family: 'Pacifico', sans-serif;
+    font-size; 30px;
+    text-align: center;
+}
+
+img {
+    max-width: 900px;
+    box-shadow: 0 0 20px grey;
+    position: relative;
+    overflow: hidden;
+}
+
 .circle {
           height:20px;
           width:20px;

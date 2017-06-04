@@ -1,11 +1,12 @@
-function slider(){
-    var $active = document.getElementsByClassName('active');
-    var $next = $active.next();
-    
-    $active.addClass('active');
-    $active.removeClass('active');
-}
-    
-$(function(){
-    setInterval( "slider()", 3000);
-});
+$(document).ready(function(){
+ // The :gt() selector selects elements with an index number higher than a specified number.
+ $(".slider img:gt(0)").hide();
+ 
+$(".next").click(function(){
+  $(".slider :first-child").fadeOut()
+   .next('img').fadeIn()
+   .end().appendTo('.slider');
+  $(".circle").html("number");
+}) 
+
+ });
