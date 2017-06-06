@@ -1,5 +1,4 @@
-var stopButton = false;
-var slideID = null;
+
 var mySlide;
 
 $(document).ready(function(){
@@ -27,4 +26,4 @@ $(document).ready(function(){
         startSlide();
             
           });
-                });               
+                }); 

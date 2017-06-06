@@ -6,3 +6,19 @@ h1 {
     text-align: center;
 }
 
+img {
+    width: 600px;
+    height: 100%;
+}
+
+.slider {
+    border: 1px solid black;
+    border-spacing: 10px 50px;
+}
+
+button {
+    background: aquamarine;
+    font-family: 'Pacifico', sans-serif;
+    font-size: 20px;
+    border: 1px solid black;
+}
