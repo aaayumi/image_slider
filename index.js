@@ -8,8 +8,8 @@ $(document).ready(function(){
     clearInterval(mySlide);
     $('.slider img:gt(0)').hide();
     mySlide = setInterval(function(){
-      $('.slider :first-child').fadeOut(300)
-         .next('img').fadeIn()
+      $('.slider :first-child').hide()
+         .next('img').fadeIn(500)
          .end().appendTo('.slider');
     }, 
       3000); 
