@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
 
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background:#bbe2f1;
+    background-size: cover;
+}
+
 h1 {
     font-family: 'Pacifico', sans-serif;
     font-size; 30px;
@@ -7,18 +18,57 @@ h1 {
 }
 
 img {
-    width: 600px;
+    display: block;
+   
+    width: 50%;
     height: 100%;
+    
 }
 
 .slider {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     border-spacing: 10px 50px;
+    max-width: 750px;
+    border: 5px solid #c0c0c0 /*rgba(0,0,0,0.2)*/;
+    position: relative;
+    font-size: 0;
+    overflow: hidden;
+    margin-bottom: 20px;
+    margin: auto;
+}
+
+.buttons {
+     width: 300px; 
+     height: 30px; 
+     margin: 0 auto;
+     text-align:center;
+    
 }
 
 button {
-    background: aquamarine;
-    font-family: 'Pacifico', sans-serif;
-    font-size: 20px;
-    border: 1px solid black;
+    margin-top: 20px;
+    margin-right: 40px;
+    padding: 10px 20px 10px 20px;
+    background: #ea5532;
+    font: 20px arial, sans-serif;
+    font-weight: 600;
+    border: 1px solid #404040;
+    box-shadow: 5px 5px 5px #888888;
 }
+
+#start {
+    background: #009e9f;
+}
+
+#start:hover{
+    background: #ffedab;
+}
+
+#stop {
+    background: #a3d6cc;
+}
+
+#stop:hover {
+    background: #f19ca7;
+}
+
